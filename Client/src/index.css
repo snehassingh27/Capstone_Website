@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 40% 98%;
+  --foreground: 201 100% 36%; /* #0077b6 for paragraphs */
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 201 100% 36%; /* #0077b6 */
+  --card: 0 0% 100%;
+  --card-foreground: 201 100% 36%; /* #0077b6 */
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --primary: 240 84% 17%; /* #030453 for headings */
+  --primary-foreground: 210 40% 98%;
+  --secondary: 201 100% 36%; /* #0077b6 */
+  --secondary-foreground: 210 40% 98%;
+  --accent: 201 100% 36%; /* #0077b6 */
+  --accent-foreground: 210 40% 98%;
+  --highlight: 201 100% 65%; /* Lighter version of #0077b6 */
+  --extra-light: 201 100% 90%; /* Very light version of #0077b6 */
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --ring: 240 84% 17%;
+  --radius: 0.5rem;
+  
+  /* Custom Project Pilots colors */
+  --text: 201 100% 36%; /* #0077b6 for paragraphs */
+  --project-heading: 240 84% 17%; /* #030453 for headings */
+  
+  /* Chart colors using #030453 and #0077b6 */
+  --chart-1: 240 84% 17%; /* #030453 - Dark navy */
+  --chart-2: 240 84% 30%; /* Slightly lighter navy */
+  --chart-3: 201 100% 36%; /* #0077b6 - Medium blue */
+  --chart-4: 201 100% 50%; /* Lighter medium blue */
+  --chart-5: 201 100% 70%; /* Very light blue */
+
+  /* Navigation colors */
+  --nav-background: 240 84% 17%; /* #030453 for navigation */
+  --nav-foreground: 0 0% 100%;
+  --nav-active: 201 100% 36%; /* #0077b6 for active items */
+  --nav-active-foreground: 0 0% 100%;
+  --nav-hover: 201 100% 50%; /* Lighter version of #0077b6 */
+  --nav-hover-foreground: 0 0% 100%;
+  --nav-border: 240 84% 12%; /* Darker version of #030453 */
+}
+
+.dark {
+  --background: 240 84% 10%;
+  --foreground: 201 100% 70%; /* Lighter #0077b6 for better visibility in dark mode */
+  --muted: 240 70% 15%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --popover: 240 84% 10%;
+  --popover-foreground: 201 100% 70%;
+  --card: 240 84% 10%;
+  --card-foreground: 201 100% 70%;
+  --border: 240 70% 15%;
+  --input: 240 70% 15%;
+  --primary: 201 100% 50%; /* #0077b6 in dark mode as a highlight color */
+  --primary-foreground: 210 40% 95%;
+  --secondary: 240 84% 30%; /* Lighter shade of #030453 */
+  --secondary-foreground: 210 40% 95%;
+  --accent: 201 100% 65%; /* Lighter version of #0077b6 */
+  --accent-foreground: 210 40% 95%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 95%;
+  --ring: 201 100% 50%;
+  
+  /* Custom Project Pilots colors in dark mode */
+  --text: 201 100% 70%; /* Lighter #0077b6 for paragraphs */
+  --project-heading: 201 100% 50%; /* #0077b6 for headings in dark mode */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    font-size: 18px; /* Increased base font size from default 16px to 18px */
+  }
+  body {
+    @apply font-inter antialiased bg-background text-foreground;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-inter;
+  }
+  
+  p, span, div {
+    @apply font-opensans;
+  }
+}
+
+/* Custom utility classes for the project */
+@layer components {
+  .section-heading {
+    @apply text-3xl font-bold text-primary mb-2;
+  }
+  
+  .section-subheading {
+    @apply text-lg text-secondary mb-6;
+  }
+  
+  /* Hide scrollbar but allow scrolling */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .card-title {
+    @apply text-2xl font-semibold text-primary mb-4;
+  }
+  
+  .card-subtitle {
+    @apply text-lg text-secondary mb-3;
+  }
+  
+  .skill-tag {
+    @apply bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded;
+  }
+  
+  .status-badge {
+    @apply px-2 inline-flex text-xs leading-5 font-semibold rounded-full;
+  }
+  
+  .status-completed {
+    @apply bg-green-100 text-green-800;
+  }
+  
+  .status-in-progress {
+    @apply bg-blue-100 text-blue-800;
+  }
+  
+  .status-planned {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+
+  .sidebar-link {
+    @apply flex items-center p-2 rounded-md hover:bg-gray-700 text-gray-300 hover:text-white transition-colors duration-200;
+  }
+  
+  .sidebar-link.active {
+    @apply bg-gray-700 text-white;
+  }
+  
+  .sidebar-icon {
+    @apply inline-flex mr-3;
+  }
+  
+  /* Project scope and overview styling */
+  .project-heading {
+    @apply text-3xl font-bold;
+    color: hsl(var(--project-heading));
+  }
+  
+  .project-text {
+    @apply text-lg leading-relaxed;
+    /* Using the original text color instead of the teal blue */
+    color: hsl(var(--foreground));
+  }
+  
+  /* Welcome text animation */
+  @keyframes text-pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  .welcome-text-animation {
+    animation: text-pop 3s ease-in-out infinite;
+    display: inline-block;
+    padding: 0 1px;
+  }
+}
