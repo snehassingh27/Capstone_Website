@@ -1,0 +1,45 @@
+Team Charter – Project Pilots (The KnotStudio Capstone Team)
+The Project Pilots are a team of six graduate students from Northeastern University’s Project Management program, collaborating to deliver a real-world capstone project for The KnotStudio. This charter defines our shared purpose, working structure, communication practices, and guiding principles to ensure successful project delivery.
+
+Purpose
+Our objective is to plan, manage, and execute a high-quality project using project management tools and methodologies. We are committed to aligning client expectations with academic outcomes through Agile, Scrum, and Waterfall practices.
+
+Team Composition
+Our team members bring varied experience from event planning, IT, construction, biotech, and operations. We rotate the role of Scrum Master weekly to foster shared leadership and learning.
+
+Scrum Master: Leads weekly planning, progress tracking, and team coordination.
+
+Developer Team: Executes project deliverables with responsibilities adjusted weekly based on the project phase.
+
+Tools and Communication
+We use structured communication methods to promote transparency and productivity:
+
+Platforms: Microsoft Teams (documentation, meetings), Email (formal updates), WhatsApp (real-time updates)
+
+Meetings:
+
+Mondays: Virtual team meeting
+
+Wednesdays: In-class check-in
+
+Saturdays: Informal WhatsApp updates
+
+Thursdays: Weekly client check-in (virtual)
+
+Ground Rules
+Attendance is mandatory at all meetings unless excused in advance.
+
+All assigned work must be completed on time. Missed contributions are addressed progressively through team support, discussion, and potential escalation.
+
+Drafts are expected 48 hours prior to deadlines for peer review.
+
+Final versions are submitted to the shared drive at least 4 hours before the official deadline.
+
+Conflict Resolution
+Conflicts are addressed respectfully through open dialogue. If needed, the Scrum Master will mediate. If unresolved, the matter is escalated to the faculty advisor.
+
+Decision-Making
+Major decisions are made through team consensus. For urgent or minor matters, the current Scrum Master or designated lead may make the call after brief consultation.
+
+Team Strengths Overview
+Our team demonstrates strong organizational, analytical, and execution skills. Strengths like coaching and self-leadership contribute to positive morale and accountability. Recognizing areas for growth in strategic thinking and creative problem-solving, we proactively balance team responsibilities to develop in these areas.
